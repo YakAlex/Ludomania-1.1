@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    background-color: #1b1f3b;
+    color: #ecf0f1;
+    height: 100vh;
+    background-image: url('../img/backRuletka.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    background: rgba(82, 23, 96, 0.5); /* Напівпрозорий фіолетовий фон */
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow:
+            0 0 20px 5px rgba(205, 9, 213, 0.5),
+            0 0 40px 10px rgba(123, 97, 255, 0.4);
+    padding: 30px;
+    backdrop-filter: blur(8px); /* Розмиття для фону за контейнером */
+    max-width: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.zagolovok {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+    text-shadow:
+            0 0 10px #a26df3,
+            0 0 20px #7f3be8,
+            0 0 40px #591fbb;
+    margin-bottom: 20px;
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.slot {
+    width: 150px;
+    height: 150px;
+    background-color: #2a2359;
+    border: 2px solid #7b61ff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(123, 97, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 15px;
+    color: #f8f4ff;
+}
+
+.button {
+    background: linear-gradient(135deg, #8f44ff, #6724b8);
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    box-shadow:
+            0 0 10px #7f3be8,
+            0 0 20px #6f2bd5,
+            0 0 30px #591fbb;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow:
+            0 0 20px #7f3be8,
+            0 0 30px #6f2bd5,
+            0 0 40px #591fbb;
+}
+
+.result {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #dcd6f7;
+}
