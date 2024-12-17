@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js" defer></script>
+    <title>Гра: Вище чи Нижче</title>
+</head>
+<body>
+
+<header>
+
+    <a href="../main.html" class="logo">Ludomania</a>
+
+    <nav>
+        <ul>
+            <li><a href="#" id="btn-promo" >Промокод</a></li>
+            <li><a id="balance">Баланс: 0</a></li>
+            <li><a href="../login/login.html">Вхід</a></li>
+            <ion-icon name="menu" class="menu" id="btn-menu"></ion-icon>
+        </ul>
+    </nav>
+
+</header>
+
+<div class="promo" id="promo">
+    <h1>Введіть промокод</h1>
+    <input type="text" placeholder="Наприклад #Ludomania">
+    <button class="btn-promo" type="submit">Використати</button>
+</div>
+
+    <div id="game-container">
+        <h1>Гра - Вище чи Нижче</h1>
+        <div class="hint">Числа генеруються від 1 до 15</div>
+        <div id="current-card" class="card">?</div>
+        <div class="buttons">
+            <button class="button higher" onclick="makeGuess('higher')">Вище</button>
+            <button class="button lower" onclick="makeGuess('lower')">Нижче</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+
+</body>
+</html>
