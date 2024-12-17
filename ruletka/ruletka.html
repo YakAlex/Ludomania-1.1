@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styleRul.css">
+    <script src="ruletka.js" defer></script>
+    <title>Щаслива вишня</title>
+</head>
+<body>
+
+    <header>
+
+        <a href="../main.html" class="logo">Ludomania</a>
+    
+        <nav>
+            <ul>
+                <li><a href="#" id="btn-promo" >Промокод</a></li>
+                <li><a id="balance">Баланс: 0</a></li>
+                <li><a href="../login/login.html">Вхід</a></li>
+                <ion-icon name="menu" class="menu" id="btn-menu"></ion-icon>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <div class="container">
+        <!-- Заголовок з фіолетовим світінням -->
+        <h1 class="zagolovok">Щаслива вишня</h1>
+
+        <!-- Слот-машина -->
+        <div class="slot-machine">
+            <div class="slot" id="slot1">🍒</div>
+            <div class="slot" id="slot2">🍒</div>
+            <div class="slot" id="slot3">🍒</div>
+        </div>
+
+        <!-- Кнопка зі світінням -->
+        <button class="button" id="spinBtn">Крутити</button>
+
+        <!-- Вивід результату -->
+        <div class="result" id="result"></div>
+    </div>
+
+    <div class="promo" id="promo">
+        <h1>Введіть промокод</h1>
+        <input type="text" placeholder="Наприклад #Ludomania">
+        <button class="btn-promo" type="submit">Використати</button>
+    </div>
+
+</body>
+</html>
